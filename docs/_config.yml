@@ -1,0 +1,13 @@
+# Document Start
+---
+title: David Chen Portfolio Website
+name: David Chen
+description: my digital projects
+timezone: America/New_York
+# Document End_config.yml_config.yml
+...
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+ 
