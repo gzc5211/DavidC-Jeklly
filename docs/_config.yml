@@ -6,6 +6,7 @@ description: my digital projects
 timezone: America/New_York
 # Document End_config.yml_config.yml
 ...
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

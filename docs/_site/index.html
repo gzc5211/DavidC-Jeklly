@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>Home</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="My Name" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <link rel="shortcut icon" type="image/x-icon" href="http://localhost:4000/favicon.ico"/> 
+        <link rel="stylesheet" type="text/css" href="webstyle.css" />
+        <link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="David Chen Portfolio Website" />
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Home | David Chen Portfolio Website</title>
+<meta name="generator" content="Jekyll v4.2.2" />
+<meta property="og:title" content="Home" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="my digital projects" />
+<meta property="og:description" content="my digital projects" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="David Chen Portfolio Website" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Home" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","description":"my digital projects","headline":"Home","name":"David Chen Portfolio Website","url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+        
+    </head>
+    <body>
+        <!-- The code in curly braces is called "liquid templating", and is used in Jekyll.
+            Below is a special "liquid tag" that will reach into the _includes directory 
+            to pull our nav.html file. And yes, I could totally have just placed the <nav> code here instead. 
+            You can put include files anywhere in your main website documents, too, with the same syntax. 
+             Notice that you don't have to worry about pointing file paths into the 
+            _includes directory. Jekyll pulls these files out for you when it assembles the parts of your website. 
+        -->
+        <nav><a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="resources.html">Resources</a></nav>
+        
+        <!--The double set of curly braces is used to call the special variables set on a given page that uses this 
+        default layout. Here we put the title of the page inside <h1> tags.--> 
+        <h1>Home</h1>
+       
+        <div class="container">
+          <!-- This special liquid template for <section>
+    <p>Welcome to my site.</p>
+    
+    <section class="newts">
+    <figure >
+        <img src="images/newt-mosaic5.png"
+            alt="image of Dr. B's firebelly newt facing clockwise" />
+    </figure>
+    <figure>
+        <img src="images/newt-mosaic4.png"
+            alt="image of Dr. B's firebelly newt facing counterclockwise" />
+    </figure>
+</section>
+<p> Mirror images of a firebelly newt.</p>
+    
+    
+    <p>We are at <a href="https://behrend.psu.edu/">Penn State Erie, The Behrend
+        College</a>.</p>
+</section> pulls in the distinct contents of a page that uses this default layout. -->  
+            <section>
+    <p>Welcome to my site.</p>
+    
+    <section class="newts">
+    <figure >
+        <img src="images/newt-mosaic5.png"
+            alt="image of Dr. B's firebelly newt facing clockwise" />
+    </figure>
+    <figure>
+        <img src="images/newt-mosaic4.png"
+            alt="image of Dr. B's firebelly newt facing counterclockwise" />
+    </figure>
+</section>
+<p> Mirror images of a firebelly newt.</p>
+    
+    
+    <p>We are at <a href="https://behrend.psu.edu/">Penn State Erie, The Behrend
+        College</a>.</p>
+</section>
+           
+        </div>
+      
+        <footer>
+            <figure><a href="https://newtfire.org/courses/"><img src="images/newt-mosaic4.png"
+                alt="NewtFire logo: a mosaic rendering of a firebelly newt" /></a></figure>
+            <p>Visit <a href="https://github.com/newtfire/jekyllSetup"
+                >our JekyllSetup GitHub repository</a>, an extension of <a href="https://newtfire.org">newtFire</a>
+                <a href="https://newtfire.org/courses/">{dh}</a>.</p>
+            <div class="boilerplate">
+                <span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar (eeb4 at psu.edu) <a
+                        rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
+                            alt="Creative Commons License" style="border-width:0"
+                            src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><a
+                        rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>
+                    <strong>Last modified: </strong>
+                    <!--2022-09-01 ebb: This page.last_modified_at only seems to wokr in local Jekyll site builds.. 
+                        Apparently last_modified_at has not been whitelisted by GitHub Pages so we need another solution. --> <a
+                        href="https://newtfire.org/firebellies.html">Powered by
+                    firebellies</a>.</span>
+            </div>
+        </footer>
+    </body>
+</html>
