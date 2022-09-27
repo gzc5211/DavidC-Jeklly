@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
     <head>
         <title>{{ page.title }}</title>
         <meta charset="UTF-8" />
@@ -13,43 +12,15 @@
         
     </head>
     <body>
-        <!-- The code in curly braces is called "liquid templating", and is used in Jekyll.
-            Below is a special "liquid tag" that will reach into the _includes directory 
-            to pull our nav.html file. And yes, I could totally have just placed the <nav> code here instead. 
-            You can put include files anywhere in your main website documents, too, with the same syntax. 
-             Notice that you don't have to worry about pointing file paths into the 
-            _includes directory. Jekyll pulls these files out for you when it assembles the parts of your website. 
-        -->
-        {% include nav.html %}
+       <div class="nav">
+           {% include nav.html %}
+       </div>
         
-        <!--The double set of curly braces is used to call the special variables set on a given page that uses this 
-        default layout. Here we put the title of the page inside <h1> tags.--> 
         <h1>{{ page.title }}</h1>
-       
-        <div class="container">
-          <!-- This special liquid template for {{content}} pulls in the distinct contents of a page that uses this default layout. -->  
+        <div class="content">
+            
             {{ content }}
            
         </div>
-      
-        <footer>
-            <figure><a href="https://newtfire.org/courses/"><img src="images/newt-mosaic4.png"
-                alt="NewtFire logo: a mosaic rendering of a firebelly newt" /></a></figure>
-            <p>Visit <a href="https://github.com/newtfire/jekyllSetup"
-                >our JekyllSetup GitHub repository</a>, an extension of <a href="https://newtfire.org">newtFire</a>
-                <a href="https://newtfire.org/courses/">{dh}</a>.</p>
-            <div class="boilerplate">
-                <span><strong>Maintained by: </strong> Elisa E. Beshero-Bondar (eeb4 at psu.edu) <a
-                        rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img
-                            alt="Creative Commons License" style="border-width:0"
-                            src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><a
-                        rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"></a>
-                    <strong>Last modified: </strong>{{ page.last_modified_at | date: '%B %d, %Y at %S: %R.' }}
-                    <!--2022-09-01 ebb: This page.last_modified_at only seems to wokr in local Jekyll site builds.. 
-                        Apparently last_modified_at has not been whitelisted by GitHub Pages so we need another solution. --> <a
-                        href="https://newtfire.org/firebellies.html">Powered by
-                    firebellies</a>.</span>
-            </div>
-        </footer>
     </body>
 </html>
